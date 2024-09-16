@@ -38,8 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
         imgcanais.style.opacity = 0.3 
         imgcanais.style.filter = "blur(0.4em)" 
 
-        dts.style.transition = "all 0.5s ease-in"
-        dts.style.bottom = "5em"
+        dts.style.transition = "all 0.5s ease"
+        if (window.matchMedia("(max-width: 658.40px)").matches) {
+                
+            dts.style.bottom = "50%" 
+
+          } else {
+             dts.style.bottom = "10%" 
+
+          }
         dts.style.opacity = 1
     } 
 
